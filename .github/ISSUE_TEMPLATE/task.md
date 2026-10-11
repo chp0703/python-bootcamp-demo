@@ -1,20 +1,20 @@
-
 ---
-name: Task
-about: Create a task for the Python bootcamp
-title: "[W1] "
-labels: ["week-1", "task"]
-assignees: ""
+name: Python homework
+about: Weekly individual Python exercises
+title: "[Python HW] "
+labels: python-hw
 ---
 
-## Task Description
-Describe what needs to be done.
+Week: w1
+Member: @username
+Reviewer: @reviewer
 
-## Acceptance Criteria
-- [ ] The implementation is complete.
-- [ ] The code or documentation has been checked.
-- [ ] Tests pass, if applicable.
-- [ ] The Pull Request is ready for review.
+## Homework checklist
+- [ ] W1-1
+- [ ] W1-2
+- [ ] W1-3
+- [ ] W1-4
+- [ ] W1-5
 
-## Additional Notes
-Add relevant information, examples, or links here.
+Estimated hours:
+Actual hours:
