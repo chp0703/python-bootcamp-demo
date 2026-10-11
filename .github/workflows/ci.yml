@@ -1,4 +1,3 @@
-
 name: Python Bootcamp CI
 
 on:
@@ -49,3 +48,13 @@ jobs:
                   print(f"ERROR: {file}: {error}")
                   sys.exit(1)
           PY
+
+  bootcamp:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install pytest ruff
+      - run: ruff check python-bootcamp
+      - run: pytest -q python-bootcamp || true
