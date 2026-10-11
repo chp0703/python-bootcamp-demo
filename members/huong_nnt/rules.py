@@ -1,4 +1,3 @@
-
 def can_register_thesis(credits: int, gpa: float) -> bool:
     return credits >= 120 and gpa >= 2.0
 
@@ -6,11 +5,9 @@ def can_register_thesis(credits: int, gpa: float) -> bool:
 def missing(credits: int, gpa: float) -> list[str]:
     reasons = []
 
-    # Kiem tra so tin chi
     if credits < 120:
         reasons.append(f"need {120 - credits} more credits")
 
-    # Kiem tra GPA
     if gpa < 2.0:
         reasons.append("GPA must be at least 2.0")
 
